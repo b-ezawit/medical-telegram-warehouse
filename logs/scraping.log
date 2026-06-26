@@ -1,0 +1,411 @@
+2026-06-26 14:10:16,258 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-06-26 14:10:16,363 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-06-26 14:10:16,484 - INFO - System clock is wrong, set time offset to -7013s
+2026-06-26 14:10:16,601 - WARNING - Server resent the older message 7655753452672925697, ignoring
+2026-06-26 14:10:17,228 - INFO - Starting sweep on channel: CheMed123
+2026-06-26 14:10:17,843 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:18,972 - INFO - Downloaded image for message ID 97
+2026-06-26 14:10:18,980 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:20,741 - INFO - Downloaded image for message ID 96
+2026-06-26 14:10:20,745 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:22,127 - INFO - Downloaded image for message ID 95
+2026-06-26 14:10:22,128 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:23,228 - INFO - Downloaded image for message ID 94
+2026-06-26 14:10:23,229 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:24,678 - INFO - Downloaded image for message ID 93
+2026-06-26 14:10:24,682 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:26,193 - INFO - Downloaded image for message ID 92
+2026-06-26 14:10:26,194 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:27,251 - INFO - Downloaded image for message ID 91
+2026-06-26 14:10:27,254 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:29,152 - INFO - Downloaded image for message ID 90
+2026-06-26 14:10:29,154 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:30,989 - INFO - Downloaded image for message ID 88
+2026-06-26 14:10:30,990 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:32,414 - INFO - Downloaded image for message ID 87
+2026-06-26 14:10:32,416 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:34,252 - INFO - Downloaded image for message ID 86
+2026-06-26 14:10:34,253 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:35,812 - INFO - Downloaded image for message ID 85
+2026-06-26 14:10:35,813 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:37,170 - INFO - Downloaded image for message ID 82
+2026-06-26 14:10:37,172 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:38,934 - INFO - Downloaded image for message ID 81
+2026-06-26 14:10:38,936 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:40,127 - INFO - Downloaded image for message ID 80
+2026-06-26 14:10:40,128 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:42,274 - INFO - Downloaded image for message ID 79
+2026-06-26 14:10:42,276 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:44,767 - INFO - Downloaded image for message ID 78
+2026-06-26 14:10:44,769 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:47,411 - INFO - Downloaded image for message ID 77
+2026-06-26 14:10:47,413 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:49,591 - INFO - Downloaded image for message ID 76
+2026-06-26 14:10:49,595 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:51,407 - INFO - Downloaded image for message ID 75
+2026-06-26 14:10:51,409 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:52,532 - INFO - Downloaded image for message ID 74
+2026-06-26 14:10:52,533 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:54,328 - INFO - Downloaded image for message ID 71
+2026-06-26 14:10:54,332 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:56,689 - INFO - Downloaded image for message ID 70
+2026-06-26 14:10:56,691 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:10:59,331 - INFO - Downloaded image for message ID 67
+2026-06-26 14:10:59,333 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:02,022 - INFO - Downloaded image for message ID 64
+2026-06-26 14:11:02,025 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:03,424 - INFO - Downloaded image for message ID 60
+2026-06-26 14:11:03,425 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:05,003 - INFO - Downloaded image for message ID 59
+2026-06-26 14:11:05,005 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:05,784 - INFO - Downloaded image for message ID 58
+2026-06-26 14:11:05,786 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:07,238 - INFO - Downloaded image for message ID 57
+2026-06-26 14:11:07,239 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:09,557 - INFO - Downloaded image for message ID 56
+2026-06-26 14:11:09,559 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:11,512 - INFO - Downloaded image for message ID 55
+2026-06-26 14:11:11,513 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:13,505 - INFO - Downloaded image for message ID 53
+2026-06-26 14:11:13,507 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:14,942 - INFO - Downloaded image for message ID 52
+2026-06-26 14:11:14,943 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:16,379 - INFO - Downloaded image for message ID 50
+2026-06-26 14:11:16,381 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:17,705 - INFO - Downloaded image for message ID 49
+2026-06-26 14:11:17,707 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:20,986 - INFO - Downloaded image for message ID 48
+2026-06-26 14:11:20,988 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:22,519 - INFO - Downloaded image for message ID 46
+2026-06-26 14:11:22,521 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:24,147 - INFO - Downloaded image for message ID 45
+2026-06-26 14:11:24,149 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:25,418 - INFO - Downloaded image for message ID 44
+2026-06-26 14:11:25,419 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:27,084 - INFO - Downloaded image for message ID 43
+2026-06-26 14:11:27,085 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:29,795 - INFO - Downloaded image for message ID 41
+2026-06-26 14:11:29,798 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:31,112 - INFO - Downloaded image for message ID 40
+2026-06-26 14:11:31,114 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:32,405 - INFO - Downloaded image for message ID 39
+2026-06-26 14:11:32,407 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:33,954 - INFO - Downloaded image for message ID 38
+2026-06-26 14:11:33,955 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:35,149 - INFO - Downloaded image for message ID 34
+2026-06-26 14:11:35,151 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:37,249 - INFO - Downloaded image for message ID 33
+2026-06-26 14:11:37,251 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:38,949 - INFO - Downloaded image for message ID 32
+2026-06-26 14:11:38,951 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:40,857 - INFO - Downloaded image for message ID 31
+2026-06-26 14:11:40,859 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:41,966 - INFO - Downloaded image for message ID 30
+2026-06-26 14:11:41,968 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:43,994 - INFO - Downloaded image for message ID 29
+2026-06-26 14:11:43,996 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:45,329 - INFO - Downloaded image for message ID 27
+2026-06-26 14:11:45,331 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:47,959 - INFO - Downloaded image for message ID 26
+2026-06-26 14:11:47,961 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:49,202 - INFO - Downloaded image for message ID 25
+2026-06-26 14:11:49,204 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:50,480 - INFO - Downloaded image for message ID 23
+2026-06-26 14:11:50,481 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:51,555 - INFO - Downloaded image for message ID 22
+2026-06-26 14:11:51,556 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:53,194 - INFO - Downloaded image for message ID 21
+2026-06-26 14:11:53,196 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:56,113 - INFO - Downloaded image for message ID 20
+2026-06-26 14:11:56,114 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:11:58,930 - INFO - Downloaded image for message ID 19
+2026-06-26 14:11:58,931 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:00,235 - INFO - Downloaded image for message ID 18
+2026-06-26 14:12:00,236 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:01,995 - INFO - Downloaded image for message ID 17
+2026-06-26 14:12:01,996 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:03,216 - INFO - Downloaded image for message ID 15
+2026-06-26 14:12:03,218 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:05,188 - INFO - Downloaded image for message ID 14
+2026-06-26 14:12:05,190 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:08,247 - INFO - Downloaded image for message ID 13
+2026-06-26 14:12:08,249 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:09,971 - INFO - Downloaded image for message ID 11
+2026-06-26 14:12:09,973 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:11,980 - INFO - Downloaded image for message ID 10
+2026-06-26 14:12:11,982 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:12,864 - INFO - Downloaded image for message ID 9
+2026-06-26 14:12:12,866 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:13,391 - INFO - Downloaded image for message ID 4
+2026-06-26 14:12:13,393 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:13,985 - INFO - Downloaded image for message ID 3
+2026-06-26 14:12:13,987 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:14,913 - INFO - Downloaded image for message ID 2
+2026-06-26 14:12:14,921 - INFO - Successfully saved 76 records to data/raw/telegram_messages/2026-06-26/CheMed123.json
+2026-06-26 14:12:14,922 - INFO - Starting sweep on channel: lobelia4cosmetics
+2026-06-26 14:12:15,881 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:17,258 - INFO - Downloaded image for message ID 26656
+2026-06-26 14:12:17,260 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:17,991 - INFO - Downloaded image for message ID 26655
+2026-06-26 14:12:17,994 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:19,315 - INFO - Downloaded image for message ID 26654
+2026-06-26 14:12:19,317 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:20,656 - INFO - Downloaded image for message ID 26653
+2026-06-26 14:12:20,658 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:21,680 - INFO - Downloaded image for message ID 26652
+2026-06-26 14:12:21,682 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:22,084 - INFO - Downloaded image for message ID 26651
+2026-06-26 14:12:22,088 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:23,198 - INFO - Downloaded image for message ID 26650
+2026-06-26 14:12:23,200 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:34,227 - INFO - Downloaded image for message ID 26649
+2026-06-26 14:12:34,228 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:35,206 - INFO - Downloaded image for message ID 26648
+2026-06-26 14:12:35,208 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:36,328 - INFO - Downloaded image for message ID 26647
+2026-06-26 14:12:36,329 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:37,629 - INFO - Downloaded image for message ID 26646
+2026-06-26 14:12:37,631 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:38,972 - INFO - Downloaded image for message ID 26645
+2026-06-26 14:12:38,974 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:40,215 - INFO - Downloaded image for message ID 26644
+2026-06-26 14:12:40,217 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:41,741 - INFO - Downloaded image for message ID 26643
+2026-06-26 14:12:41,743 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:42,443 - INFO - Downloaded image for message ID 26642
+2026-06-26 14:12:42,445 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:43,883 - INFO - Downloaded image for message ID 26641
+2026-06-26 14:12:43,885 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:45,386 - INFO - Downloaded image for message ID 26640
+2026-06-26 14:12:45,388 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:46,513 - INFO - Downloaded image for message ID 26639
+2026-06-26 14:12:46,516 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:46,819 - INFO - Downloaded image for message ID 26638
+2026-06-26 14:12:46,821 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:48,095 - INFO - Downloaded image for message ID 26637
+2026-06-26 14:12:48,096 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:49,621 - INFO - Downloaded image for message ID 26636
+2026-06-26 14:12:49,623 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:49,967 - INFO - Downloaded image for message ID 26635
+2026-06-26 14:12:49,969 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:50,915 - INFO - Downloaded image for message ID 26634
+2026-06-26 14:12:50,917 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:51,959 - INFO - Downloaded image for message ID 26633
+2026-06-26 14:12:51,961 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:52,519 - INFO - Downloaded image for message ID 26632
+2026-06-26 14:12:52,521 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:53,252 - INFO - Downloaded image for message ID 26631
+2026-06-26 14:12:53,254 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:54,266 - INFO - Downloaded image for message ID 26630
+2026-06-26 14:12:54,268 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:55,813 - INFO - Downloaded image for message ID 26629
+2026-06-26 14:12:55,815 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:12:56,887 - INFO - Downloaded image for message ID 26628
+2026-06-26 14:12:56,889 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:07,562 - INFO - Downloaded image for message ID 26627
+2026-06-26 14:13:07,564 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:09,805 - INFO - Downloaded image for message ID 26626
+2026-06-26 14:13:09,808 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:11,327 - INFO - Downloaded image for message ID 26625
+2026-06-26 14:13:11,330 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:12,498 - INFO - Downloaded image for message ID 26624
+2026-06-26 14:13:12,500 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:13,863 - INFO - Downloaded image for message ID 26623
+2026-06-26 14:13:13,868 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:15,135 - INFO - Downloaded image for message ID 26622
+2026-06-26 14:13:15,136 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:16,417 - INFO - Downloaded image for message ID 26621
+2026-06-26 14:13:16,418 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:17,614 - INFO - Downloaded image for message ID 26620
+2026-06-26 14:13:17,616 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:18,947 - INFO - Downloaded image for message ID 26619
+2026-06-26 14:13:18,950 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:20,249 - INFO - Downloaded image for message ID 26618
+2026-06-26 14:13:20,252 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:21,664 - INFO - Downloaded image for message ID 26617
+2026-06-26 14:13:21,666 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:23,705 - INFO - Downloaded image for message ID 26616
+2026-06-26 14:13:23,706 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:25,872 - INFO - Downloaded image for message ID 26615
+2026-06-26 14:13:25,874 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:26,922 - INFO - Downloaded image for message ID 26614
+2026-06-26 14:13:26,924 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:28,728 - INFO - Downloaded image for message ID 26613
+2026-06-26 14:13:28,731 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:30,329 - INFO - Downloaded image for message ID 26612
+2026-06-26 14:13:30,331 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:38,586 - INFO - Downloaded image for message ID 26611
+2026-06-26 14:13:38,588 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:39,838 - INFO - Downloaded image for message ID 26610
+2026-06-26 14:13:39,840 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:41,000 - INFO - Downloaded image for message ID 26609
+2026-06-26 14:13:41,002 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:42,083 - INFO - Downloaded image for message ID 26608
+2026-06-26 14:13:42,085 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:44,099 - INFO - Downloaded image for message ID 26607
+2026-06-26 14:13:44,101 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:46,065 - INFO - Downloaded image for message ID 26606
+2026-06-26 14:13:46,067 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:47,473 - INFO - Downloaded image for message ID 26605
+2026-06-26 14:13:47,475 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:48,999 - INFO - Downloaded image for message ID 26604
+2026-06-26 14:13:49,001 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:50,022 - INFO - Downloaded image for message ID 26603
+2026-06-26 14:13:50,024 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:50,259 - INFO - Downloaded image for message ID 26602
+2026-06-26 14:13:50,261 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:51,454 - INFO - Downloaded image for message ID 26601
+2026-06-26 14:13:51,456 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:53,125 - INFO - Downloaded image for message ID 26600
+2026-06-26 14:13:53,129 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:54,687 - INFO - Downloaded image for message ID 26599
+2026-06-26 14:13:54,690 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:55,208 - INFO - Downloaded image for message ID 26598
+2026-06-26 14:13:55,210 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:13:57,264 - INFO - Downloaded image for message ID 26597
+2026-06-26 14:13:57,266 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:00,094 - INFO - Downloaded image for message ID 26596
+2026-06-26 14:14:00,096 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:02,306 - INFO - Downloaded image for message ID 26595
+2026-06-26 14:14:02,308 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:04,219 - INFO - Downloaded image for message ID 26594
+2026-06-26 14:14:04,221 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:05,004 - INFO - Downloaded image for message ID 26593
+2026-06-26 14:14:05,006 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:07,398 - INFO - Downloaded image for message ID 26592
+2026-06-26 14:14:07,400 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:08,817 - INFO - Downloaded image for message ID 26591
+2026-06-26 14:14:08,819 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:10,494 - INFO - Downloaded image for message ID 26590
+2026-06-26 14:14:10,496 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:11,215 - INFO - Downloaded image for message ID 26589
+2026-06-26 14:14:11,217 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:12,884 - INFO - Downloaded image for message ID 26588
+2026-06-26 14:14:12,886 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:13,229 - INFO - Downloaded image for message ID 26587
+2026-06-26 14:14:13,232 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:14:14,190 - INFO - Downloaded image for message ID 26586
+2026-06-26 14:14:14,192 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:43,490 - INFO - Downloaded image for message ID 26585
+2026-06-26 14:23:43,491 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:43,506 - INFO - The server closed the connection while sending
+2026-06-26 14:23:43,507 - WARNING - Server closed the connection: [WinError 1236] The network connection was aborted by the local system
+2026-06-26 14:23:43,510 - INFO - Connection closed while sending data
+2026-06-26 14:23:43,514 - INFO - <class 'ConnectionAbortedError'> during disconnect: [WinError 1236] The network connection was aborted by the local system
+2026-06-26 14:23:43,514 - INFO - Connection closed while receiving data: [WinError 1236] The network connection was aborted by the local system
+2026-06-26 14:23:43,514 - INFO - Closing current connection to begin reconnect...
+2026-06-26 14:23:43,514 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-06-26 14:23:43,617 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-06-26 14:23:43,740 - WARNING - Security error while unpacking a received message: Server replied with a wrong session ID (see FAQ for details)
+2026-06-26 14:23:46,708 - INFO - Downloaded image for message ID 26584
+2026-06-26 14:23:46,711 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:47,865 - INFO - Downloaded image for message ID 26583
+2026-06-26 14:23:47,871 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:50,141 - INFO - Downloaded image for message ID 26582
+2026-06-26 14:23:50,143 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:50,165 - INFO - Got difference for account updates
+2026-06-26 14:23:51,854 - INFO - Downloaded image for message ID 26581
+2026-06-26 14:23:51,858 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:53,854 - INFO - Downloaded image for message ID 26580
+2026-06-26 14:23:53,856 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:55,113 - INFO - Downloaded image for message ID 26579
+2026-06-26 14:23:55,116 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:56,388 - INFO - Downloaded image for message ID 26578
+2026-06-26 14:23:56,390 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:23:58,465 - INFO - Downloaded image for message ID 26577
+2026-06-26 14:23:58,468 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:00,640 - INFO - Downloaded image for message ID 26576
+2026-06-26 14:24:00,642 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:01,775 - INFO - Downloaded image for message ID 26575
+2026-06-26 14:24:01,777 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:03,829 - INFO - Downloaded image for message ID 26574
+2026-06-26 14:24:03,832 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:05,089 - INFO - Downloaded image for message ID 26573
+2026-06-26 14:24:05,091 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:06,990 - INFO - Downloaded image for message ID 26572
+2026-06-26 14:24:06,992 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:07,957 - INFO - Downloaded image for message ID 26571
+2026-06-26 14:24:07,959 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:09,586 - INFO - Downloaded image for message ID 26570
+2026-06-26 14:24:09,588 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:10,518 - INFO - Downloaded image for message ID 26569
+2026-06-26 14:24:10,520 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:12,122 - INFO - Downloaded image for message ID 26568
+2026-06-26 14:24:12,124 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:12,525 - INFO - Downloaded image for message ID 26567
+2026-06-26 14:24:12,527 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:12,990 - INFO - Downloaded image for message ID 26566
+2026-06-26 14:24:12,992 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:13,922 - INFO - Downloaded image for message ID 26565
+2026-06-26 14:24:13,924 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:15,196 - INFO - Downloaded image for message ID 26564
+2026-06-26 14:24:15,198 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:17,613 - INFO - Downloaded image for message ID 26563
+2026-06-26 14:24:17,616 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:26,981 - INFO - Downloaded image for message ID 26562
+2026-06-26 14:24:26,985 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:28,392 - INFO - Downloaded image for message ID 26561
+2026-06-26 14:24:28,394 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:40,194 - INFO - Downloaded image for message ID 26560
+2026-06-26 14:24:40,196 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:41,829 - INFO - Downloaded image for message ID 26559
+2026-06-26 14:24:41,830 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:43,587 - INFO - Downloaded image for message ID 26558
+2026-06-26 14:24:43,590 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:44,979 - INFO - Downloaded image for message ID 26557
+2026-06-26 14:24:44,988 - INFO - Successfully saved 100 records to data/raw/telegram_messages/2026-06-26/lobelia4cosmetics.json
+2026-06-26 14:24:44,990 - INFO - Starting sweep on channel: tikvahpharma
+2026-06-26 14:24:46,439 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:50,678 - INFO - Downloaded image for message ID 196344
+2026-06-26 14:24:50,679 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:52,013 - INFO - Downloaded image for message ID 196343
+2026-06-26 14:24:52,018 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:53,480 - INFO - Downloaded image for message ID 196340
+2026-06-26 14:24:53,482 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:54,391 - INFO - Downloaded image for message ID 196339
+2026-06-26 14:24:54,392 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:56,742 - INFO - Downloaded image for message ID 196338
+2026-06-26 14:24:56,744 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:24:57,910 - INFO - Downloaded image for message ID 196337
+2026-06-26 14:24:57,921 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:00,121 - INFO - Downloaded image for message ID 196327
+2026-06-26 14:25:00,134 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:01,897 - INFO - Downloaded image for message ID 196313
+2026-06-26 14:25:01,898 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:02,877 - INFO - Downloaded image for message ID 196312
+2026-06-26 14:25:02,878 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:05,331 - INFO - Downloaded image for message ID 196311
+2026-06-26 14:25:05,333 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:06,506 - INFO - Downloaded image for message ID 196310
+2026-06-26 14:25:06,517 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:07,409 - INFO - Downloaded image for message ID 196295
+2026-06-26 14:25:07,416 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:08,857 - INFO - Downloaded image for message ID 196288
+2026-06-26 14:25:08,859 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:09,641 - INFO - Downloaded image for message ID 196286
+2026-06-26 14:25:09,651 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:10,613 - INFO - Downloaded image for message ID 196271
+2026-06-26 14:25:10,615 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:13,102 - INFO - Downloaded image for message ID 196270
+2026-06-26 14:25:13,104 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:14,229 - INFO - Downloaded image for message ID 196269
+2026-06-26 14:25:14,231 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:15,757 - INFO - Downloaded image for message ID 196268
+2026-06-26 14:25:15,781 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:17,219 - INFO - Downloaded image for message ID 196247
+2026-06-26 14:25:17,220 - INFO - Starting direct file download in chunks of 131072 at 0, stride 131072
+2026-06-26 14:25:19,913 - INFO - Downloaded image for message ID 196246
+2026-06-26 14:25:19,945 - INFO - Successfully saved 100 records to data/raw/telegram_messages/2026-06-26/tikvahpharma.json
+2026-06-26 14:25:19,946 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-06-26 14:25:19,947 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-06-26 15:48:52,766 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-06-26 15:48:52,878 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-06-26 15:48:53,024 - INFO - System clock is wrong, set time offset to -7013s
+2026-06-26 15:48:53,919 - INFO - Starting sweep on channel: CheMed123
+2026-06-26 15:48:54,682 - INFO - Successfully saved 76 records to data/raw/telegram_messages/2026-06-26/CheMed123.json
+2026-06-26 15:48:54,683 - INFO - Starting sweep on channel: lobelia4cosmetics
+2026-06-26 15:48:55,896 - INFO - Successfully saved 100 records to data/raw/telegram_messages/2026-06-26/lobelia4cosmetics.json
+2026-06-26 15:48:55,897 - INFO - Starting sweep on channel: tikvahpharma
+2026-06-26 15:48:57,594 - INFO - Successfully saved 100 records to data/raw/telegram_messages/2026-06-26/tikvahpharma.json
+2026-06-26 15:48:57,595 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-06-26 15:48:57,597 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
