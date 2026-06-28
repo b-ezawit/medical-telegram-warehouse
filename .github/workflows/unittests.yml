@@ -20,7 +20,7 @@ jobs:
         ports:
           - 5432:5432
         options: >-
-          --health-cmd pg_isready
+          --health-cmd "pg_isready -U test_user"
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
@@ -39,6 +39,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install dbt-postgres
 
     - name: Run FastAPI Tests
       env:
@@ -49,13 +50,32 @@ jobs:
         DB_NAME: test_db
       run: |
         pytest tests/
-
+    
+    - name: Create dbt profiles
+      run: |
+        mkdir -p medical_warehouse/.dbt
+        cat > medical_warehouse/.dbt/profiles.yml <<'YAML'
+        medical_warehouse:
+          target: dev
+          outputs:
+            dev:
+              type: postgres
+              host: "{{ env_var('DB_HOST') }}"
+              user: "{{ env_var('DB_USER') }}"
+              password: "{{ env_var('DB_PASSWORD') }}"
+              port: 5432
+              dbname: "{{ env_var('DB_NAME') }}"
+              schema: public
+              threads: 1
+        YAML
+    
     - name: Validate dbt Structure
       env:
         DB_HOST: localhost
         DB_USER: test_user
         DB_PASSWORD: test_password
         DB_NAME: test_db
+        DBT_PROFILES_DIR: medical_warehouse/.dbt
       run: |
         cd medical_warehouse
         dbt parse
