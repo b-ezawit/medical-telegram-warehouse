@@ -75,7 +75,7 @@ jobs:
         DB_USER: test_user
         DB_PASSWORD: test_password
         DB_NAME: test_db
-        DBT_PROFILES_DIR: medical_warehouse/.dbt
+        DBT_PROFILES_DIR: ${{ github.workspace }}/medical_warehouse/.dbt
       run: |
         cd medical_warehouse
         dbt parse
