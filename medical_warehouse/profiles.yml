@@ -1,12 +1,82 @@
-medical_warehouse:
-  outputs:
-    dev:
-      type: postgres
-      host: localhost
-      user: postgres
-      password: my_secret_password
-      port: 5433                  
-      dbname: medical_db
-      schema: analytics         
-      threads: 4
-  target: dev
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+          POSTGRES_DB: test_db
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U test_user"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install "dbt-core<2.0" "dbt-postgres<2.0"
+
+    - name: Run FastAPI Tests
+      env:
+        PYTHONPATH: .
+        DB_HOST: localhost
+        DB_USER: test_user
+        DB_PASSWORD: test_password
+        DB_NAME: test_db
+      run: |
+        pytest tests/
+    
+    - name: Create dbt profiles
+      run: |
+        mkdir -p medical_warehouse/.dbt
+        cat > medical_warehouse/.dbt/profiles.yml <<'YAML'
+        medical_warehouse:
+          target: dev
+          outputs:
+            dev:
+              type: postgres
+              host: "{{ env_var('DB_HOST') }}"
+              user: "{{ env_var('DB_USER') }}"
+              password: "{{ env_var('DB_PASSWORD') }}"
+              port: 5432
+              dbname: "{{ env_var('DB_NAME') }}"
+              schema: public
+              threads: 1
+        YAML
+    
+    - name: Validate dbt Structure
+      env:
+        DB_HOST: localhost
+        DB_USER: test_user
+        DB_PASSWORD: test_password
+        DB_NAME: test_db
+        DBT_PROFILES_DIR: ${{ github.workspace }}/medical_warehouse/.dbt
+      run: |
+        cd medical_warehouse
+        dbt parse
+      
