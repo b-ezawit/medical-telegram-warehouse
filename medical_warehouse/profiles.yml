@@ -1,0 +1,12 @@
+medical_warehouse:
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: my_secret_password
+      port: 5433                  
+      dbname: medical_db
+      schema: analytics         
+      threads: 4
+  target: dev
