@@ -75,7 +75,7 @@ def run_data_pipeline():
             name="telegram_messages",
             con=engine,
             schema="raw",
-            if_exists="replace", # Replaces old instances during testing runs
+            if_exists="append",
             index=False
         )
         print("✅ Data Lake migration completely finalized successfully!")
