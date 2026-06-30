@@ -22,7 +22,6 @@ def run_data_pipeline():
     base_directory = "data/raw/telegram_messages"
     processed_records = []
 
-    # 2. Find all JSON files within your partitioned directory structure
     search_path = os.path.join(base_directory, "**/*.json")
     target_files = glob.glob(search_path, recursive=True)
     
@@ -30,11 +29,9 @@ def run_data_pipeline():
         print(f"⚠️ No raw JSON files found under {base_directory}. Double check your pathing.")
         return
 
-    print(f"🔍 Found {len(target_files)} target JSON partition files. Parsing content...")
+    print(f"Found {len(target_files)} target JSON partition files. Parsing content...")
 
-    # 3. Read and extract individual message elements
     for file_path in target_files:
-        # Infer the backup channel name from filename in case it is absent in the json structure
         filename = os.path.basename(file_path)
         channel_fallback = filename.replace(".json", "")
 
@@ -42,7 +39,6 @@ def run_data_pipeline():
             try:
                 content = json.load(raw_file)
                 
-                # Make sure the file content is structured as a collection list
                 messages_list = content if isinstance(content, list) else [content]
                 
                 for msg in messages_list:
@@ -58,18 +54,17 @@ def run_data_pipeline():
                     }
                     processed_records.append(extracted_row)
             except Exception as error:
-                print(f"❌ Failed to parse file {file_path}. Reason: {error}")
+                print(f"Failed to parse file {file_path}. Reason: {error}")
 
     # 4. Ship compiled rows into Postgres
     if processed_records:
         df = pd.DataFrame(processed_records)
         
-        # Ensure target structural schema "raw" is explicitly created inside the DB instance
         with engine.connect() as connection:
             connection.execute(text("CREATE SCHEMA IF NOT EXISTS raw;"))
             connection.commit()
             
-        print(f"🚀 Streaming {len(df)} records into PostgreSQL table 'raw.telegram_messages'...")
+        print(f"Streaming {len(df)} records into PostgreSQL table 'raw.telegram_messages'...")
         
         df.to_sql(
             name="telegram_messages",
@@ -78,9 +73,9 @@ def run_data_pipeline():
             if_exists="append",
             index=False
         )
-        print("✅ Data Lake migration completely finalized successfully!")
+        print("Data Lake migration completely finalized successfully!")
     else:
-        print("ℹ️ Zero records loaded.")
+        print("Zero records loaded.")
 
 if __name__ == "__main__":
     run_data_pipeline()
