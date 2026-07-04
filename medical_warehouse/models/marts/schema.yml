@@ -2,43 +2,81 @@ version: 2
 
 models:
   - name: dim_channels
-    description: "Dimension table containing aggregated metadata and classifications for Telegram channels."
+    description: "Dimension table containing aggregated performance tracking and operational sector classifications for monitored Telegram channels."
     columns:
       - name: channel_key
-        description: "Primary key. MD5 surrogate key generated from channel_name."
+        description: "Primary Key. A cryptographically secure MD5 surrogate hash generated using the channel_name field."
         tests:
           - unique
           - not_null
+      - name: channel_name
+        description: "The unique raw string text identifier for the specific Telegram channel."
+      - name: channel_type
+        description: "The operational industry classification mapped via text wildcards (Pharmaceutical, Cosmetics, or Medical)."
+      - name: first_post_date
+        description: "The minimum message timestamp captured for this channel inside our ingestion data lake."
+      - name: last_post_date
+        description: "The maximum message timestamp captured for this channel inside our ingestion data lake."
+      - name: total_posts
+        description: "The cumulative count of unique message records pulled from this specific channel."
+      - name: avg_views
+        description: "The statistical mean view count computed across all active messages in this channel."
 
   - name: dim_dates
-    description: "Time-intelligence calendar dimension table."
+    description: "Time-intelligence calendar lookup dimension table used to slice metrics by distinct time granularities without doing runtime string parsing."
     columns:
       - name: date_key
-        description: "Primary key. Clean integer representation of dates formatted as YYYYMMDD."
+        description: "Primary Key. An optimized integer representation of dates formatted cleanly as YYYYMMDD."
         tests:
           - unique
           - not_null
+      - name: full_date
+        description: "The exact calendar date cast as a standard DATE datatype."
+      - name: day_of_week
+        description: "The ISO day index where Monday is 1 and Sunday is 7."
+      - name: day_name
+        description: "The full localized text string representing the weekday (e.g., Friday)."
+      - name: week_of_year
+        description: "The numeric index of the calendar week within the current year (1 to 53)."
+      - name: month
+        description: "The numeric calendar month index (1 to 12)."
+      - name: month_name
+        description: "The full calendar text string representing the month name (e.g., June)."
+      - name: quarter
+        description: "The calendar year quarter index (1 to 4)."
+      - name: year
+        description: "The full four-digit calendar year value."
+      - name: is_weekend
+        description: "A boolean indicator specifying true if the day falls on a Saturday or Sunday, otherwise false."
 
   - name: fct_messages
-    description: "Central fact table containing transactional metrics for every processed Telegram message."
+    description: "Centralized fact table containing quantitative metrics, transactional records, and text objects for all processed Telegram messages."
     columns:
       - name: message_id
-        description: "Granular identifier for messages."
+        description: "The unique transactional identifier of a specific message record within its source channel."
         tests:
           - not_null
-
       - name: channel_key
-        description: "Foreign Key referencing dim_channels.channel_key."
+        description: "Foreign Key mapping back to dim_channels.channel_key."
         tests:
           - not_null
           - relationships:
               to: ref('dim_channels')
               field: channel_key
-
       - name: date_key
-        description: "Foreign Key referencing dim_dates.date_key."
+        description: "Foreign Key mapping back to dim_dates.date_key."
         tests:
           - not_null
           - relationships:
               to: ref('dim_dates')
               field: date_key
+      - name: message_text
+        description: "The raw text payload extracted from the content body of the Telegram post."
+      - name: message_length
+        description: "The integer character count length of the raw message text string."
+      - name: view_count
+        description: "The numeric tally tracking how many unique users viewed this message."
+      - name: forward_count
+        description: "The numeric tally tracking how many times users forwarded this message to other groups."
+      - name: has_image_flag
+        description: "A boolean flag indicating whether the message object contains an attached image attachment file."

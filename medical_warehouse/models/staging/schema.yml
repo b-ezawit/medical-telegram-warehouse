@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_telegram_messages
+    description: "Staging view that cleans, type-casts, and structures raw Telegram message data for downstream dimensional modeling."
+    columns:
+      - name: message_id
+        description: "Unique integer identifier for the message within its source channel."
+      - name: channel_name
+        description: "Clean text name of the originating Telegram channel."
+      - name: message_timestamp
+        description: "The parsed, timezone-aware timestamp showing when the message was posted."
+      - name: message_text
+        description: "The raw text payload contents extracted from the body of the message."
+      - name: has_media
+        description: "Boolean flag tracking if the post contains any generic media objects."
+      - name: image_path
+        description: "The local system storage path location where the attached image binary was saved."
+      - name: view_count
+        description: "Total number of unique users who viewed the post."
+      - name: forward_count
+        description: "Total number of times users forwarded the post."
+      - name: message_length
+        description: "Computed character count length of the raw text string."
+      - name: has_image_file
+        description: "Boolean flag tracking specifically whether an image file attachment is present."
