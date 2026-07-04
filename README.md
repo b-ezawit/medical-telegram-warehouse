@@ -50,10 +50,4 @@ dbt run --profiles-dir .
 
 ---
 
-##  Security Note
-
-Local `.session` token authentication mappings, raw `.env` credential configurations, and dbt target logs are explicitly untracked via `.gitignore` to maintain secure pipeline integrity.
-
-```
-
 ```
