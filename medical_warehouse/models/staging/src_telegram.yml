@@ -5,3 +5,5 @@ sources:
     schema: raw
     tables:
       - name: telegram_messages
+      - name: yolo_detections  
+        description: "Raw object detection metrics and classification outputs generated via YOLOv8 model processing."

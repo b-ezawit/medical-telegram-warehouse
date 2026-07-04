@@ -1,0 +1,190 @@
+message_id,channel_name,file_name,detected_class,confidence_score,image_category
+10,CheMed123,10.jpg,none,0.0,other
+11,CheMed123,11.jpg,clock,0.4273,other
+13,CheMed123,13.jpg,"hot dog, donut",0.5039,other
+14,CheMed123,14.jpg,none,0.0,other
+15,CheMed123,15.jpg,none,0.0,other
+17,CheMed123,17.jpg,bottle,0.526,product_display
+18,CheMed123,18.jpg,none,0.0,other
+19,CheMed123,19.jpg,"dining table, person",0.9401,lifestyle
+2,CheMed123,2.jpg,bottle,0.3872,product_display
+20,CheMed123,20.jpg,"dining table, person",0.9401,lifestyle
+21,CheMed123,21.jpg,bird,0.2526,other
+22,CheMed123,22.jpg,stop sign,0.2775,other
+23,CheMed123,23.jpg,cell phone,0.6107,other
+25,CheMed123,25.jpg,"cell phone, person",0.8613,lifestyle
+26,CheMed123,26.jpg,"book, cup, person",0.8276,lifestyle
+27,CheMed123,27.jpg,none,0.0,other
+29,CheMed123,29.jpg,"surfboard, person",0.6185,lifestyle
+3,CheMed123,3.jpg,none,0.0,other
+30,CheMed123,30.jpg,person,0.4139,lifestyle
+31,CheMed123,31.jpg,bottle,0.5125,product_display
+32,CheMed123,32.jpg,person,0.5882,lifestyle
+33,CheMed123,33.jpg,"book, orange",0.6712,other
+34,CheMed123,34.jpg,none,0.0,other
+38,CheMed123,38.jpg,none,0.0,other
+39,CheMed123,39.jpg,mouse,0.9114,other
+4,CheMed123,4.jpg,none,0.0,other
+40,CheMed123,40.jpg,person,0.7191,lifestyle
+41,CheMed123,41.jpg,person,0.421,lifestyle
+43,CheMed123,43.jpg,"chair, person",0.8565,lifestyle
+44,CheMed123,44.jpg,"cell phone, person",0.9387,lifestyle
+45,CheMed123,45.jpg,scissors,0.632,other
+46,CheMed123,46.jpg,"tv, person",0.8272,lifestyle
+48,CheMed123,48.jpg,none,0.0,other
+49,CheMed123,49.jpg,"kite, frisbee",0.6802,other
+50,CheMed123,50.jpg,cake,0.2916,other
+52,CheMed123,52.jpg,"horse, person",0.7039,lifestyle
+53,CheMed123,53.jpg,person,0.5738,lifestyle
+55,CheMed123,55.jpg,stop sign,0.3071,other
+56,CheMed123,56.jpg,person,0.833,lifestyle
+57,CheMed123,57.jpg,"potted plant, person",0.8897,lifestyle
+58,CheMed123,58.jpg,bottle,0.4115,product_display
+59,CheMed123,59.jpg,bottle,0.2866,product_display
+60,CheMed123,60.jpg,none,0.0,other
+64,CheMed123,64.jpg,"banana, remote, person",0.6865,lifestyle
+67,CheMed123,67.jpg,"book, stop sign",0.5792,other
+70,CheMed123,70.jpg,"book, potted plant, person",0.9247,lifestyle
+71,CheMed123,71.jpg,person,0.8836,lifestyle
+74,CheMed123,74.jpg,none,0.0,other
+75,CheMed123,75.jpg,person,0.8353,lifestyle
+76,CheMed123,76.jpg,"chair, person",0.8694,lifestyle
+77,CheMed123,77.jpg,bottle,0.9558,product_display
+78,CheMed123,78.jpg,person,0.7699,lifestyle
+79,CheMed123,79.jpg,none,0.0,other
+80,CheMed123,80.jpg,"bottle, chair, person",0.9279,promotional
+81,CheMed123,81.jpg,bottle,0.8818,product_display
+82,CheMed123,82.jpg,"apple, bottle",0.8992,product_display
+85,CheMed123,85.jpg,none,0.0,other
+86,CheMed123,86.jpg,"refrigerator, person",0.9013,lifestyle
+87,CheMed123,87.jpg,parking meter,0.2786,other
+88,CheMed123,88.jpg,none,0.0,other
+9,CheMed123,9.jpg,bottle,0.3872,product_display
+90,CheMed123,90.jpg,book,0.3078,other
+91,CheMed123,91.jpg,none,0.0,other
+92,CheMed123,92.jpg,none,0.0,other
+93,CheMed123,93.jpg,person,0.9077,lifestyle
+94,CheMed123,94.jpg,"cup, person",0.7409,lifestyle
+95,CheMed123,95.jpg,person,0.8684,lifestyle
+96,CheMed123,96.jpg,cup,0.326,other
+97,CheMed123,97.jpg,none,0.0,other
+26557,lobelia4cosmetics,26557.jpg,none,0.0,other
+26558,lobelia4cosmetics,26558.jpg,bottle,0.2725,product_display
+26559,lobelia4cosmetics,26559.jpg,none,0.0,other
+26560,lobelia4cosmetics,26560.jpg,none,0.0,other
+26561,lobelia4cosmetics,26561.jpg,none,0.0,other
+26562,lobelia4cosmetics,26562.jpg,bottle,0.8619,product_display
+26563,lobelia4cosmetics,26563.jpg,none,0.0,other
+26564,lobelia4cosmetics,26564.jpg,none,0.0,other
+26565,lobelia4cosmetics,26565.jpg,none,0.0,other
+26566,lobelia4cosmetics,26566.jpg,cup,0.354,other
+26567,lobelia4cosmetics,26567.jpg,none,0.0,other
+26568,lobelia4cosmetics,26568.jpg,bottle,0.6433,product_display
+26569,lobelia4cosmetics,26569.jpg,none,0.0,other
+26570,lobelia4cosmetics,26570.jpg,none,0.0,other
+26571,lobelia4cosmetics,26571.jpg,"vase, bottle",0.6695,product_display
+26572,lobelia4cosmetics,26572.jpg,bottle,0.4643,product_display
+26573,lobelia4cosmetics,26573.jpg,bottle,0.573,product_display
+26574,lobelia4cosmetics,26574.jpg,book,0.4796,other
+26575,lobelia4cosmetics,26575.jpg,bottle,0.3253,product_display
+26576,lobelia4cosmetics,26576.jpg,bottle,0.4999,product_display
+26577,lobelia4cosmetics,26577.jpg,"refrigerator, bottle",0.4215,product_display
+26578,lobelia4cosmetics,26578.jpg,bottle,0.677,product_display
+26579,lobelia4cosmetics,26579.jpg,none,0.0,other
+26580,lobelia4cosmetics,26580.jpg,none,0.0,other
+26581,lobelia4cosmetics,26581.jpg,bottle,0.4823,product_display
+26582,lobelia4cosmetics,26582.jpg,bottle,0.5669,product_display
+26583,lobelia4cosmetics,26583.jpg,book,0.2522,other
+26584,lobelia4cosmetics,26584.jpg,"donut, cell phone",0.4422,other
+26585,lobelia4cosmetics,26585.jpg,"knife, fork, cup",0.8578,other
+26586,lobelia4cosmetics,26586.jpg,none,0.0,other
+26587,lobelia4cosmetics,26587.jpg,none,0.0,other
+26588,lobelia4cosmetics,26588.jpg,sports ball,0.368,other
+26589,lobelia4cosmetics,26589.jpg,"stop sign, person",0.6776,lifestyle
+26590,lobelia4cosmetics,26590.jpg,none,0.0,other
+26591,lobelia4cosmetics,26591.jpg,clock,0.2708,other
+26592,lobelia4cosmetics,26592.jpg,"traffic light, bottle",0.3037,product_display
+26593,lobelia4cosmetics,26593.jpg,bottle,0.5939,product_display
+26594,lobelia4cosmetics,26594.jpg,none,0.0,other
+26595,lobelia4cosmetics,26595.jpg,"orange, teddy bear",0.3178,other
+26596,lobelia4cosmetics,26596.jpg,bottle,0.9058,product_display
+26597,lobelia4cosmetics,26597.jpg,person,0.8004,lifestyle
+26598,lobelia4cosmetics,26598.jpg,bottle,0.7407,product_display
+26599,lobelia4cosmetics,26599.jpg,"cup, dining table, bottle",0.5097,product_display
+26600,lobelia4cosmetics,26600.jpg,person,0.3117,lifestyle
+26601,lobelia4cosmetics,26601.jpg,bottle,0.4263,product_display
+26602,lobelia4cosmetics,26602.jpg,none,0.0,other
+26603,lobelia4cosmetics,26603.jpg,none,0.0,other
+26604,lobelia4cosmetics,26604.jpg,bottle,0.2725,product_display
+26605,lobelia4cosmetics,26605.jpg,none,0.0,other
+26606,lobelia4cosmetics,26606.jpg,bottle,0.6768,product_display
+26607,lobelia4cosmetics,26607.jpg,bottle,0.7881,product_display
+26608,lobelia4cosmetics,26608.jpg,none,0.0,other
+26609,lobelia4cosmetics,26609.jpg,none,0.0,other
+26610,lobelia4cosmetics,26610.jpg,none,0.0,other
+26611,lobelia4cosmetics,26611.jpg,bottle,0.8619,product_display
+26612,lobelia4cosmetics,26612.jpg,"book, refrigerator, bottle",0.2932,product_display
+26613,lobelia4cosmetics,26613.jpg,"book, cup",0.286,other
+26614,lobelia4cosmetics,26614.jpg,"cup, bottle",0.4486,product_display
+26615,lobelia4cosmetics,26615.jpg,"orange, bottle",0.3435,product_display
+26616,lobelia4cosmetics,26616.jpg,bottle,0.3353,product_display
+26617,lobelia4cosmetics,26617.jpg,"dining table, refrigerator, bottle",0.5083,product_display
+26618,lobelia4cosmetics,26618.jpg,bottle,0.4823,product_display
+26619,lobelia4cosmetics,26619.jpg,bottle,0.5669,product_display
+26620,lobelia4cosmetics,26620.jpg,bottle,0.437,product_display
+26621,lobelia4cosmetics,26621.jpg,bottle,0.5032,product_display
+26622,lobelia4cosmetics,26622.jpg,bottle,0.5096,product_display
+26623,lobelia4cosmetics,26623.jpg,bottle,0.6109,product_display
+26624,lobelia4cosmetics,26624.jpg,"cake, bottle",0.3789,product_display
+26625,lobelia4cosmetics,26625.jpg,none,0.0,other
+26626,lobelia4cosmetics,26626.jpg,none,0.0,other
+26627,lobelia4cosmetics,26627.jpg,none,0.0,other
+26628,lobelia4cosmetics,26628.jpg,none,0.0,other
+26629,lobelia4cosmetics,26629.jpg,"book, cup",0.7179,other
+26630,lobelia4cosmetics,26630.jpg,none,0.0,other
+26631,lobelia4cosmetics,26631.jpg,none,0.0,other
+26632,lobelia4cosmetics,26632.jpg,book,0.2522,other
+26633,lobelia4cosmetics,26633.jpg,"knife, fork, cup",0.8578,other
+26634,lobelia4cosmetics,26634.jpg,none,0.0,other
+26635,lobelia4cosmetics,26635.jpg,none,0.0,other
+26636,lobelia4cosmetics,26636.jpg,sports ball,0.368,other
+26637,lobelia4cosmetics,26637.jpg,bottle,0.4263,product_display
+26638,lobelia4cosmetics,26638.jpg,none,0.0,other
+26639,lobelia4cosmetics,26639.jpg,none,0.0,other
+26640,lobelia4cosmetics,26640.jpg,bottle,0.2725,product_display
+26641,lobelia4cosmetics,26641.jpg,none,0.0,other
+26642,lobelia4cosmetics,26642.jpg,"stop sign, person",0.6776,lifestyle
+26643,lobelia4cosmetics,26643.jpg,none,0.0,other
+26644,lobelia4cosmetics,26644.jpg,bottle,0.7959,product_display
+26645,lobelia4cosmetics,26645.jpg,bottle,0.7738,product_display
+26646,lobelia4cosmetics,26646.jpg,orange,0.4805,other
+26647,lobelia4cosmetics,26647.jpg,book,0.276,other
+26648,lobelia4cosmetics,26648.jpg,none,0.0,other
+26649,lobelia4cosmetics,26649.jpg,none,0.0,other
+26650,lobelia4cosmetics,26650.jpg,none,0.0,other
+26651,lobelia4cosmetics,26651.jpg,cup,0.354,other
+26652,lobelia4cosmetics,26652.jpg,none,0.0,other
+26653,lobelia4cosmetics,26653.jpg,bottle,0.4823,product_display
+26654,lobelia4cosmetics,26654.jpg,bottle,0.5669,product_display
+26655,lobelia4cosmetics,26655.jpg,book,0.2522,other
+26656,lobelia4cosmetics,26656.jpg,"donut, cell phone",0.4422,other
+196246,tikvahpharma,196246.jpg,"laptop, keyboard, person, tv",0.9522,lifestyle
+196247,tikvahpharma,196247.jpg,laptop,0.7089,other
+196268,tikvahpharma,196268.jpg,bowl,0.3644,other
+196269,tikvahpharma,196269.jpg,none,0.0,other
+196270,tikvahpharma,196270.jpg,none,0.0,other
+196271,tikvahpharma,196271.jpg,refrigerator,0.3358,other
+196286,tikvahpharma,196286.jpg,"book, toothbrush",0.3337,other
+196288,tikvahpharma,196288.jpg,bowl,0.3644,other
+196295,tikvahpharma,196295.jpg,"sports ball, person",0.3923,lifestyle
+196310,tikvahpharma,196310.jpg,none,0.0,other
+196311,tikvahpharma,196311.jpg,none,0.0,other
+196312,tikvahpharma,196312.jpg,refrigerator,0.3358,other
+196313,tikvahpharma,196313.jpg,laptop,0.7089,other
+196327,tikvahpharma,196327.jpg,none,0.0,other
+196337,tikvahpharma,196337.jpg,none,0.0,other
+196338,tikvahpharma,196338.jpg,none,0.0,other
+196339,tikvahpharma,196339.jpg,refrigerator,0.3358,other
+196340,tikvahpharma,196340.jpg,laptop,0.7089,other
+196343,tikvahpharma,196343.jpg,none,0.0,other
+196344,tikvahpharma,196344.jpg,"clock, microwave, tv",0.6954,other
