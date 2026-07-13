@@ -1,6 +1,9 @@
+# api/schemas.py
 from pydantic import BaseModel
-from typing import Optional, List
+from datetime import datetime, date
+from typing import List, Optional
 
+# --- Endpoint 1: Top Products Response ---
 class TopProductResponse(BaseModel):
     product_name: str
     mention_count: int
@@ -8,30 +11,42 @@ class TopProductResponse(BaseModel):
     class Config:
         from_attributes = True
 
+# --- Endpoint 2: Channel Activity Response ---
 class ChannelActivityResponse(BaseModel):
     channel_name: str
-    total_messages: int
-    latest_post_date: Optional[str] = None
+    channel_type: str
+    total_posts: int
+    avg_views: float
+    first_post_date: Optional[datetime] = None
+    last_post_date: Optional[datetime] = None
 
     class Config:
         from_attributes = True
 
+# --- Endpoint 3: Message Search Response ---
 class MessageSearchResponse(BaseModel):
     message_id: int
-    channel_name: Optional[str] = None
+    channel_name: str
+    full_date: date
     message_text: Optional[str] = None
-    views: Optional[int] = None
+    view_count: int
+    forward_count: int
 
     class Config:
         from_attributes = True
 
-class VisualContentStatsResponse(BaseModel):
+# --- Endpoint 4: Visual Content Stats Response ---
+class VisualContentStat(BaseModel):
     channel_name: str
-    total_images_analyzed: int
+    total_images: int
     promotional_count: int
     product_display_count: int
     lifestyle_count: int
     other_count: int
+
+class VisualContentResponse(BaseModel):
+    summary: str
+    channels: List[VisualContentStat]
 
     class Config:
         from_attributes = True
