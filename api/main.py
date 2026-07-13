@@ -1,171 +1,126 @@
-from fastapi import FastAPI, Depends, HTTPException, Query, Path
+# api/main.py
+from fastapi import FastAPI, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from typing import List
-from .database import get_db
-from .schemas import (
-    TopProductResponse, 
-    ChannelActivityResponse, 
-    MessageSearchResponse, 
-    VisualContentStatsResponse
-)
+
+from api.database import get_db
+from api import schemas
 
 app = FastAPI(
-    title="Medical Telegram Warehouse Analytical API",
-    description=(
-        "Operational REST API Gateway\n"
-        "This API provides programmatic access to the data warehouse data mart layers. "
-        "It exposes transformed metrics, message text analytics, and computer vision "
-        "object detection classifications generated during the extraction pipelines."
-    ),
+    title="Kara Solutions - Ethiopian Medical Businesses Analytics API",
+    description="REST API exposing insights from transformed Telegram dbt Marts.",
     version="1.0.0"
 )
 
-@app.get("/", tags=["System Health"])
+def get_table_schema(db: Session, table_name: str) -> str:
+    """Helper to automatically discover which schema a dbt table lives in."""
+    query = text("""
+        SELECT table_schema 
+        FROM information_schema.tables 
+        WHERE table_name = :table_name 
+        LIMIT 1
+    """)
+    result = db.execute(query, {"table_name": table_name}).fetchone()
+    if result:
+        return f'"{result[0]}".'
+    return ""  # Fallback to default if not found
+
+@app.get("/")
 def read_root():
-    return {
-        "status": "healthy",
-        "message": "Welcome to the Medical Warehouse REST API. Go to /docs for interactive Swagger documentation."
-    }
+    return {"message": "Welcome to the Medical Telegram Warehouse Analytical API. Navigate to /docs for testing."}
 
-@app.get(
-    "/api/reports/top-products", 
-    response_model=List[TopProductResponse],
-    tags=["Analytical Reports"],
-    summary="Retrieve most frequently mentioned terms or products"
-)
-def get_top_products(
-    limit: int = Query(
-        default=10, 
-        ge=1, 
-        le=100, 
-        description="The maximum number of top mentioned product items to return. Must be between 1 and 100."
-    ), 
-    db: Session = Depends(get_db)
-):
-    query = text("""
-        select 
-            message_text as product_name, 
-            count(*) as mention_count
-        from raw.telegram_messages
-        where message_text is not null and length(message_text) < 50
-        group by message_text
-        order by mention_count desc
-        limit :limit
+# --- Endpoint 1: Top Products ---
+@app.get("/api/reports/top-products", response_model=List[schemas.TopProductResponse])
+def get_top_products(limit: int = Query(10, ge=1, le=100), db: Session = Depends(get_db)):
+    schema = get_table_schema(db, "fct_messages")
+    query = text(f"""
+        SELECT 
+            LOWER(UNNEST(REGEXP_MATCHES(message_text, '(paracetamol|amoxicillin|ibuprofen|cream|vitamin|serum|gel|capsule|pill)', 'g'))) AS product_name,
+            COUNT(*) AS mention_count
+        FROM {schema}fct_messages
+        WHERE message_text IS NOT NULL
+        GROUP BY product_name
+        ORDER BY mention_count DESC
+        LIMIT :limit
     """)
     try:
-        results = db.execute(query, {"limit": limit}).fetchall()
-        return [{"product_name": r[0], "mention_count": r[1]} for r in results]
+        result = db.execute(query, {"limit": limit}).fetchall()
+        return [{"product_name": row[0], "mention_count": row[1]} for row in result]
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Database query failure: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
 
-@app.get(
-    "/api/channels/{channel_name}/activity", 
-    response_model=ChannelActivityResponse,
-    tags=["Channel Metrics"],
-    summary="Get posting volume and timelines for a specific channel"
-)
-def get_channel_activity(
-    channel_name: str = Path(
-        ..., 
-        description="The exact identifier directory name of the Telegram channel (e.g., 'CheMed123'). Case-insensitive."
-    ), 
-    db: Session = Depends(get_db)
-):
-    query = text("""
-        select 
-            channel_name,
-            count(*) as total_messages,
-            max(date_key::text) as latest_post_date
-        from raw.yolo_detections
-        where lower(channel_name) = lower(:channel_name)
-        group by channel_name
+# --- Endpoint 2: Channel Activity ---
+@app.get("/api/channels/{channel_name}/activity", response_model=schemas.ChannelActivityResponse)
+def get_channel_activity(channel_name: str, db: Session = Depends(get_db)):
+    schema = get_table_schema(db, "dim_channels")
+    query = text(f"""
+        SELECT channel_name, channel_type, first_post_date, last_post_date, total_posts, avg_views
+        FROM {schema}Dim_channels
+        WHERE LOWER(channel_name) = LOWER(:channel_name)
     """)
-    result = db.execute(query, {"channel_name": channel_name}).fetchone()
+    try:
+        result = db.execute(query, {"channel_name": channel_name}).fetchone()
+        if not result:
+            raise HTTPException(status_code=404, detail=f"Channel '{channel_name}' not found.")
+        return {
+            "channel_name": result[0], "channel_type": result[1],
+            "first_post_date": result[2], "last_post_date": result[3],
+            "total_posts": result[4], "avg_views": float(result[5])
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Database error: {str(e)}")
+
+# --- Endpoint 3: Message Search ---
+@app.get("/api/search/messages", response_model=List[schemas.MessageSearchResponse])
+def search_messages(query: str = Query(..., min_length=2), limit: int = Query(20, ge=1, le=100), db: Session = Depends(get_db)):
+    fct_schema = get_table_schema(db, "fct_messages")
+    chan_schema = get_table_schema(db, "dim_channels")
+    date_schema = get_table_schema(db, "dim_dates")
     
-    if not result:
-        raise HTTPException(status_code=404, detail=f"Channel '{channel_name}' not found or contains no recorded activity.")
-        
-    return {
-        "channel_name": result[0],
-        "total_messages": result[1],
-        "latest_post_date": result[2]
-    }
-
-@app.get(
-    "/api/search/messages", 
-    response_model=List[MessageSearchResponse],
-    tags=["Search Engine"],
-    summary="Search historic text contents for explicit keywords"
-)
-def search_messages(
-    query: str = Query(
-        ..., 
-        min_length=2, 
-        description="The alphanumeric keyword search string to match inside message bodies (e.g., 'paracetamol')."
-    ), 
-    limit: int = Query(
-        default=20, 
-        ge=1, 
-        le=50, 
-        description="Maximum matching message records to return. Default is 20 rows."
-    ), 
-    db: Session = Depends(get_db)
-):
-    sql = text("""
-        select 
-            id as message_id,
-            channel as channel_name,
-            message_text,
-            coalesce(views, 0) as views
-        from raw.telegram_messages
-        where message_text ilike :search_query
-        order by views desc
-        limit :limit
+    sql_query = text(f"""
+        SELECT f.message_id, c.channel_name, d.full_date, f.message_text, f.view_count, f.forward_count
+        FROM {fct_schema}fct_messages f
+        JOIN {chan_schema}Dim_channels c ON f.channel_key = c.channel_key
+        JOIN {date_schema}Dim_dates d ON f.date_key = d.date_key
+        WHERE f.message_text ILIKE :search_param
+        ORDER BY f.view_count DESC
+        LIMIT :limit
     """)
     try:
-        results = db.execute(sql, {"search_query": f"%{query}%", "limit": limit}).fetchall()
+        search_param = f"%{query}%"
+        result = db.execute(sql_query, {"search_param": search_param, "limit": limit}).fetchall()
         return [
-            {
-                "message_id": r[0],
-                "channel_name": r[1],
-                "message_text": r[2],
-                "views": r[3]
-            } for r in results
+            {"message_id": r[0], "channel_name": r[1], "full_date": r[2], "message_text": r[3], "view_count": r[4], "forward_count": r[5]}
+            for r in result
         ]
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Search execution failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Search failure: {str(e)}")
 
-@app.get(
-    "/api/reports/visual-content", 
-    response_model=List[VisualContentStatsResponse],
-    tags=["Analytical Reports"],
-    summary="Fetch object classification statistics across all channels"
-)
+# --- Endpoint 4: Visual Content Stats ---
+@app.get("/api/reports/visual-content", response_model=schemas.VisualContentResponse)
 def get_visual_content_stats(db: Session = Depends(get_db)):
-    query = text("""
-        select 
-            channel_name,
-            count(*) as total_images_analyzed,
-            count(case when image_category = 'promotional' then 1 end) as promotional_count,
-            count(case when image_category = 'product_display' then 1 end) as product_display_count,
-            count(case when image_category = 'lifestyle' then 1 end) as lifestyle_count,
-            count(case when image_category = 'other' then 1 end) as other_count
-        from raw.yolo_detections
-        group by channel_name
-        order by total_images_analyzed desc
+    img_schema = get_table_schema(db, "fct_image_detections")
+    chan_schema = get_table_schema(db, "dim_channels")
+    
+    query = text(f"""
+        SELECT c.channel_name, COUNT(i.message_id) AS total_images,
+            COUNT(CASE WHEN i.image_category = 'promotional' THEN 1 END) AS promotional_count,
+            COUNT(CASE WHEN i.image_category = 'product_display' THEN 1 END) AS product_display_count,
+            COUNT(CASE WHEN i.image_category = 'lifestyle' THEN 1 END) AS lifestyle_count,
+            COUNT(CASE WHEN i.image_category = 'other' THEN 1 END) AS other_count
+        FROM {img_schema}fct_image_detections i
+        JOIN {chan_schema}Dim_channels c ON i.channel_key = c.channel_key
+        GROUP BY c.channel_name
     """)
     try:
-        results = db.execute(query).fetchall()
-        return [
-            {
-                "channel_name": r[0],
-                "total_images_analyzed": r[1],
-                "promotional_count": r[2],
-                "product_display_count": r[3],
-                "lifestyle_count": r[4],
-                "other_count": r[5]
-            } for r in results
+        result = db.execute(query).fetchall()
+        channels_data = [
+            {"channel_name": r[0], "total_images": r[1], "promotional_count": r[2], "product_display_count": r[3], "lifestyle_count": r[4], "other_count": r[5]}
+            for r in result
         ]
+        return {"summary": "YOLOv8 image metrics across medical channels.", "channels": channels_data}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Failed fetching visualization stats: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Metrics breakdown error: {str(e)}")
